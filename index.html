@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime8s Customizer (GitHub Accessories)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Prime8s Customizer (IPFS .webp + GitHub Accessories)</h1>
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+
+    <div class="controls">
+      <input type="number" id="tokenIdInput" placeholder="Enter Token ID (e.g. 123)" />
+      <button id="fetchBtn">Load Prime8 from IPFS</button>
+
+      <label>Accessory Layer:</label>
+      <select id="accessorySelector">
+        <option value="">None</option>
+        <option value="https://raw.githubusercontent.com/PRIME8s/closet/main/accessories/coffee%20left.png">Coffee Left</option>
+        <option value="https://raw.githubusercontent.com/PRIME8s/closet/main/accessories/coffee%20right.png">Coffee Right</option>
+        <option value="https://raw.githubusercontent.com/PRIME8s/closet/main/accessories/taco.png">Taco</option>
+      </select>
+
+      <button id="downloadBtn">Download PNG</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
