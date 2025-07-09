@@ -16,7 +16,7 @@ function drawCanvas() {
 }
 
 function loadByTokenId(tokenId) {
-  const paddedId = tokenId.padStart(3, '0');
+  const paddedId = tokenId.padStart(0, '0');
   const imageUrl = `https://bafybeihx7j3tzwdeadts4v7wz5xtwanyrrm6ilpi6yf37lxhwuse7kkfqy.ipfs.w3s.link/${paddedId}.webp`;
 
   baseImage = new Image();
